@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 while True:
     prompt = input("Ingresa tu pregunta crack: ")

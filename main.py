@@ -1,4 +1,5 @@
 import openai
+import config
 import typer
 from rich import print
 from rich.table import Table
@@ -33,7 +34,7 @@ def main():
     print(table)
 
     # Configuraciond e API_KEY
-    openai.api_key = "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"
+    openai.api_key = config.api_key
 
     # Inicio una lista de diccionarios donde la clave "role": "system" genera  el contexto que se le da al asistente
     context = {"role":"system", "content":"charlas filosoficas, de sistemas informaticos y por supuesto de la vida misma"}
